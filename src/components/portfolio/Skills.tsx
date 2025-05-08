@@ -8,18 +8,18 @@ interface SkillProps {
 }
 
 const skillsData: SkillProps[] = [
-  { name: 'HTML & CSS', level: 95 },
-  { name: 'JavaScript', level: 90 },
-  { name: 'React', level: 92 },
-  { name: 'TypeScript', level: 85 },
-  { name: 'Node.js', level: 88 },
-  { name: 'UI/UX Design', level: 80 },
-  { name: 'Tailwind CSS', level: 90 },
-  { name: 'Git & GitHub', level: 85 },
-  { name: 'MongoDB', level: 78 },
-  { name: 'PostgreSQL', level: 75 },
+  { name: 'Python', level: 90 },
+  { name: 'Java', level: 85 },
+  { name: 'JavaScript', level: 82 },
+  { name: 'HTML & CSS', level: 88 },
+  { name: 'Flutter', level: 80 },
+  { name: 'Firebase', level: 85 },
+  { name: 'Data Structures & Algorithms', level: 80 },
+  { name: 'R Programming', level: 75 },
   { name: 'AWS', level: 70 },
-  { name: 'Docker', level: 72 },
+  { name: 'Android Development', level: 85 },
+  { name: 'UI/UX Design', level: 78 },
+  { name: 'C Programming', level: 80 },
 ];
 
 const SkillBar: React.FC<SkillProps> = ({ name, level }) => {
@@ -57,7 +57,16 @@ const Skills: React.FC = () => {
           <div className="mt-16">
             <h3 className="text-xl font-semibold mb-6 text-center text-white">Additional Technologies & Tools</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              {['Next.js', 'GraphQL', 'Redux', 'Figma', 'Jest', 'Express', 'Webpack', 'Firebase', 'Vercel', 'Netlify', 'SASS', 'Material UI'].map((tech, index) => (
+              {['Git', 'GitHub', 'VS Code', 'Android Studio', 'MongoDB', 'SQLite', 'MySQL', 'Oracle', 'NLTK', 'Flask', 'Node.js', 'Agile'].map((tech, index) => (
+                <span key={index} className="px-4 py-2 bg-secondary rounded-full text-sm text-gray-300">{tech}</span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="mt-16">
+            <h3 className="text-xl font-semibold mb-6 text-center text-white">Soft Skills</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {['Communication', 'Analytical Thinking', 'Team Collaboration', 'Prioritization', 'Adaptability', 'Leadership', 'Project Management'].map((tech, index) => (
                 <span key={index} className="px-4 py-2 bg-secondary rounded-full text-sm text-gray-300">{tech}</span>
               ))}
             </div>

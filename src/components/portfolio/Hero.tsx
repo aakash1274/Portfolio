@@ -14,15 +14,15 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="opacity-0 animate-fadeUp text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
-            <span className="text-gradient">John Doe</span>
+            <span className="text-gradient">Aakash Eti</span>
           </h1>
           
           <p className="opacity-0 animate-fadeUp delay-100 text-xl md:text-2xl lg:text-3xl text-gray-300 font-light mb-8">
-            Full-Stack Developer & UI/UX Designer
+            Information Technology Student & Developer
           </p>
           
           <p className="opacity-0 animate-fadeUp delay-200 max-w-2xl mx-auto text-base md:text-lg lg:text-xl text-gray-400 mb-10">
-            I create elegant solutions to complex problems, specializing in React, Node.js, and modern web technologies.
+            Motivated and detail-oriented undergraduate with hands-on experience in software development, cloud technologies, and UI/UX design.
           </p>
           
           <div className="opacity-0 animate-fadeUp delay-300 flex flex-col md:flex-row gap-4 justify-center">

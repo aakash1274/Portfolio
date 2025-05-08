@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ExternalLink, Link, Github } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 interface ProjectProps {
   title: string;
@@ -13,34 +13,34 @@ interface ProjectProps {
 
 const projectsData: ProjectProps[] = [
   {
-    title: "E-commerce Platform",
-    description: "A full-featured online store with product catalog, user authentication, cart functionality, and payment integration using Stripe.",
-    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    title: "Kisan Connect",
+    description: "Leading development of an agricultural app using Flutter, Firebase, and Node.js. Implemented multilingual support, weather API integration, and voice assistance to connect farmers with buyers.",
+    image: "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    tags: ["Flutter", "Firebase", "Node.js", "Agriculture", "Machine Learning"],
     demoLink: "#",
     codeLink: "#"
   },
   {
-    title: "Task Management App",
-    description: "A productivity application for teams to manage projects, assign tasks, track progress, and collaborate efficiently.",
-    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["React", "TypeScript", "Firebase", "Material UI"],
+    title: "Chat Feature",
+    description: "Developed an NLP-based chat feature using Python, Flask, and NLTK; deployed the app using Firebase. Enabled basic conversational functionality and real-time interactions.",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    tags: ["Python", "Flask", "NLTK", "Firebase", "NLP"],
     demoLink: "#",
     codeLink: "#"
   },
   {
-    title: "Healthcare Dashboard",
-    description: "An analytics dashboard for healthcare providers to monitor patient data, appointments, and medical records securely.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["React", "D3.js", "Node.js", "PostgreSQL"],
+    title: "Front End Development",
+    description: "Boosted website performance by 50% and lead quality by 100% through frontend revamp and targeted outreach for Eklavya Solutions.",
+    image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    tags: ["HTML5", "CSS3", "JavaScript", "UI/UX", "Performance Optimization"],
     demoLink: "#",
     codeLink: "#"
   },
   {
-    title: "Weather Application",
-    description: "A beautiful weather app that provides real-time forecasts, interactive maps, and customizable alerts based on location.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["JavaScript", "HTML5", "CSS3", "Weather API"],
+    title: "Android UI/UX Optimization",
+    description: "Optimized Android UI/UX for better performance and user experience during my internship at Google.",
+    image: "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    tags: ["Android", "UI/UX Design", "Java", "Performance Optimization"],
     demoLink: "#",
     codeLink: "#"
   },
@@ -93,7 +93,7 @@ const Projects: React.FC = () => {
           <span className="text-gradient-primary">My Projects</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
-          Here are some of my recent projects that showcase my skills and experience in web development.
+          Here are some of my key projects that showcase my skills and experience in software development.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
@@ -104,7 +104,7 @@ const Projects: React.FC = () => {
         
         <div className="text-center mt-16">
           <a 
-            href="https://github.com" 
+            href="https://github.com/aakash1274" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center px-6 py-3 rounded-lg bg-accent hover:bg-accent/80 text-white font-medium transition-all duration-300"

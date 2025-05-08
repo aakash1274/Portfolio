@@ -13,31 +13,30 @@ const About: React.FC = () => {
           <div className="order-2 lg:order-1">
             <h3 className="text-2xl font-semibold mb-4 text-white">Who I Am</h3>
             <p className="text-gray-300 mb-4">
-              I'm a passionate full-stack developer with a keen eye for design and a love for creating seamless user experiences. 
-              With over 5 years of experience in web development, I've worked on projects ranging from small business websites to 
-              complex enterprise applications.
+              I'm a passionate Information Technology undergraduate with a focus on software development, cloud technologies, and UI/UX design.
+              I have proven ability to lead teams, manage projects, and build scalable applications using modern tech stacks.
             </p>
             <p className="text-gray-300 mb-6">
               My approach combines technical expertise with creative problem-solving. I believe in writing clean, maintainable code 
-              that scales well and provides real value to users and businesses alike.
+              that provides real value to users and businesses alike.
             </p>
             
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <h4 className="font-medium text-white mb-2">Location</h4>
-                <p className="text-gray-400">San Francisco, CA</p>
-              </div>
-              <div>
-                <h4 className="font-medium text-white mb-2">Experience</h4>
-                <p className="text-gray-400">5+ Years</p>
+                <p className="text-gray-400">Vijayawada, India</p>
               </div>
               <div>
                 <h4 className="font-medium text-white mb-2">Education</h4>
-                <p className="text-gray-400">B.S. Computer Science</p>
+                <p className="text-gray-400">B.Tech in Information Technology</p>
               </div>
               <div>
-                <h4 className="font-medium text-white mb-2">Languages</h4>
-                <p className="text-gray-400">English, Spanish</p>
+                <h4 className="font-medium text-white mb-2">University</h4>
+                <p className="text-gray-400">VVIT, Guntur</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-white mb-2">Email</h4>
+                <p className="text-gray-400">aakasheti4555@gmail.com</p>
               </div>
             </div>
           </div>
@@ -47,7 +46,7 @@ const About: React.FC = () => {
               <div className="absolute inset-0 bg-gray-900 rounded-2xl overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" 
-                  alt="John Doe" 
+                  alt="Aakash Eti" 
                   className="w-full h-full object-cover"
                 />
               </div>
