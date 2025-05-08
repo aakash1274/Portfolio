@@ -11,6 +11,7 @@ import Organizations from './Organizations';
 import Achievements from './Achievements';
 import Contact from './Contact';
 import Footer from './Footer';
+import SEO from '../SEO';
 
 const Portfolio: React.FC = () => {
   useEffect(() => {
@@ -54,6 +55,12 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <SEO 
+        title="Aakash Eti | Information Technology Student & Developer"
+        description="Portfolio of Aakash Eti, a motivated and detail-oriented IT undergraduate with experience in software development, cloud technologies, and UI/UX design."
+        type="profile"
+        name="Aakash Eti"
+      />
       <Header />
       <main>
         <Hero />

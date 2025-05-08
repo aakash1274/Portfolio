@@ -1,21 +1,61 @@
 
 import React from 'react';
-import { Award, Certificate } from 'lucide-react';
+import { Award, Medal } from 'lucide-react';
 
 const achievements = [
-  "Winner, Idea-Thon & Paper Presentation – HCET (450+ teams, national level)",
-  "Winner, Hackathon, Ideation (Software Track) – Vignan University (100+ teams)",
-  "Runner, Debate Competition – National Anti-Corruption Day",
-  "3rd Place, Proto Verse – GITAM Hyderabad (250+ teams, national level, Software Prototype)",
-  "Recipient, National Means-cum-Merit Scholarship – Government of India"
+  {
+    title: "Winner, Idea-Thon & Paper Presentation",
+    organization: "HCET",
+    description: "Competed among 450+ teams at the national level"
+  },
+  {
+    title: "Winner, Hackathon, Ideation (Software Track)",
+    organization: "Vignan University",
+    description: "Competed among 100+ teams"
+  },
+  {
+    title: "Runner, Debate Competition",
+    organization: "National Anti-Corruption Day",
+    description: "Demonstrated strong communication and persuasive skills"
+  },
+  {
+    title: "3rd Place, Proto Verse",
+    organization: "GITAM Hyderabad",
+    description: "Software Prototype competition with 250+ teams at the national level"
+  },
+  {
+    title: "Recipient, National Means-cum-Merit Scholarship",
+    organization: "Government of India",
+    description: "Recognized for academic excellence and financial need"
+  }
 ];
 
 const certifications = [
-  "Google Certified Android Developer – Google (2024)",
-  "Machine Learning Certification – NPTEL (2024)",
-  "Programming in Java Certification – NPTEL (2024)",
-  "Certified Java Programmer – Infosys Springboard (2023)",
-  "Entrepreneurship – EdX (2022)"
+  {
+    title: "Google Certified Android Developer",
+    organization: "Google",
+    year: "2024"
+  },
+  {
+    title: "Machine Learning Certification",
+    organization: "NPTEL",
+    year: "2024"
+  },
+  {
+    title: "Programming in Java Certification",
+    organization: "NPTEL",
+    year: "2024"
+  },
+  {
+    title: "Certified Java Programmer",
+    organization: "Infosys Springboard",
+    year: "2023"
+  },
+  {
+    title: "Entrepreneurship",
+    organization: "EdX",
+    year: "2022"
+  }
 ];
 
 const Achievements: React.FC = () => {
@@ -26,43 +66,45 @@ const Achievements: React.FC = () => {
           <span className="text-gradient-primary">Achievements & Certifications</span>
         </h2>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-5xl mx-auto">
           {/* Achievements */}
-          <div>
-            <div className="flex items-center mb-8">
-              <Award className="text-accent h-7 w-7 mr-3" />
-              <h3 className="text-2xl font-bold text-white">Achievements</h3>
-            </div>
-            
-            <ul className="space-y-4">
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold mb-8 text-white flex items-center">
+              <Award className="mr-3 text-accent" />
+              Achievements
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {achievements.map((achievement, index) => (
-                <li key={index} className="bg-secondary/30 p-4 rounded-lg hover:bg-secondary/40 transition-colors flex items-start">
-                  <span className="inline-flex items-center justify-center text-accent bg-accent/10 w-6 h-6 rounded-full text-sm font-bold mr-3">
-                    {index + 1}
-                  </span>
-                  <span className="text-gray-300">{achievement}</span>
-                </li>
+                <div 
+                  key={index} 
+                  className="bg-secondary/20 p-6 rounded-lg hover:bg-secondary/30 transition-colors"
+                >
+                  <h4 className="text-lg font-semibold text-white mb-2">{achievement.title}</h4>
+                  <p className="text-accent mb-2">{achievement.organization}</p>
+                  <p className="text-gray-400">{achievement.description}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
           
           {/* Certifications */}
           <div>
-            <div className="flex items-center mb-8">
-              <Certificate className="text-accent h-7 w-7 mr-3" />
-              <h3 className="text-2xl font-bold text-white">Certifications</h3>
-            </div>
-            
-            <ul className="space-y-4">
-              {certifications.map((certification, index) => (
-                <li key={index} className="bg-secondary/30 p-4 rounded-lg hover:bg-secondary/40 transition-colors flex items-start">
-                  <span className="inline-flex items-center justify-center text-accent bg-accent/10 w-6 h-6 rounded-full text-sm font-bold mr-3">
-                    {index + 1}
-                  </span>
-                  <span className="text-gray-300">{certification}</span>
-                </li>
+            <h3 className="text-2xl font-bold mb-8 text-white flex items-center">
+              <Medal className="mr-3 text-accent" />
+              Certifications
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {certifications.map((cert, index) => (
+                <div 
+                  key={index} 
+                  className="bg-secondary/20 p-6 rounded-lg hover:bg-secondary/30 transition-colors"
+                >
+                  <h4 className="text-lg font-semibold text-white mb-2">{cert.title}</h4>
+                  <p className="text-accent mb-1">{cert.organization}</p>
+                  <p className="text-gray-400">{cert.year}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>
