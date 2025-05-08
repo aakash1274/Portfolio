@@ -11,7 +11,7 @@ import Organizations from './Organizations';
 import Achievements from './Achievements';
 import Contact from './Contact';
 import Footer from './Footer';
-import SEO from '../SEO';
+import SEO from '../seo/SEO'; // Update the path to the correct location of the SEO component
 
 const Portfolio: React.FC = () => {
   useEffect(() => {
